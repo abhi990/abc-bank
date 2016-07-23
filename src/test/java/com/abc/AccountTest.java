@@ -6,6 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AccountTest {
     private static final double DOUBLE_DELTA = 1e-8;
+    
     //using a year as testcase for calculating interestEarned 
     //and also using 10000 milli seconds to be make sure test is being performed exactly after year
     private static final long MILLI_SECS_IN_YEAR= (long)365*24*60*60*1000 +10000;

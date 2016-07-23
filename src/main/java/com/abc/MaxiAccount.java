@@ -14,19 +14,11 @@ public class MaxiAccount extends Account {
 		lastWithdrawlDate = DateProvider.getInstance().start();
 	}
 	
-	/* 
-	 * interest rate after a withdrawl is calculated as 
-	 *  =  0.1% for first 10 days 
-	 *  =  5% for days after first 10 days
-	 * 
-	 */
-
 	@Override
 	public double getInterestAccrued() {
 		if (checkLastWithdrawlDate()){
 			return getDeposit() * (0.001)*((double)(getDaysFromLastUpdate())/(double)365);
 		}else{
-			//double interest10days = (getDeposit() * 0.001) * ((double)10/365);
 			return getDeposit()*(0.05)*((double)(getDaysFromLastUpdate())/(double)365);
 		}
 	}

@@ -1,8 +1,5 @@
 package com.abc;
 
-import java.util.Date;
-
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,8 +8,6 @@ public class BankTest {
 	
 	private static final double DOUBLE_DELTA = 1e-8;
     private static final long MILLI_SECS_IN_YEAR= (long)365*24*60*60*1000 + 100000;
-    
-    private DateProvider dateFactory = DateProvider.getInstance();
 
     @Test //customer summaries for bank/bankManager
     public void customerSummary() {

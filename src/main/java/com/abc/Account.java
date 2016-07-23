@@ -8,13 +8,6 @@ import java.util.Date;
 import java.util.List;
 
 public abstract class Account {
-	static boolean test1;
-
-	// TODO create a AccType enum 
-	/* 
-	 * enum AccType { CHECKING, SAVINGS, MAXI_SAVINGS}
-	 * 
-	 * */
 
     private List<Transaction> transactions;
     private double deposits;  // total funds in account
