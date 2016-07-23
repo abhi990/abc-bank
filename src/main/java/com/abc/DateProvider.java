@@ -11,8 +11,16 @@ public class DateProvider {
             instance = new DateProvider();
         return instance;
     }
-
-    public Date now() {
-        return Calendar.getInstance().getTime();
+    
+    public Date now(){
+    	return Calendar.getInstance().getTime();
     }
+    
+    /*
+     * to give initial withdrawl time for a maxi account as  year 1970 
+     */
+    public Date start(){
+    	return new Date(0);
+    }
+    
 }
