@@ -7,15 +7,13 @@ public class Bank {
     private List<Customer> customers;
 
     public Bank() {
-        customers = new ArrayList<>();
+        customers = new ArrayList<Customer>();
     }
 
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
 
-    
-    //report of customers and number of accounts they have
     public String customerSummary() {
         String summary = "Customer Summary";
         for (Customer c : customers)
